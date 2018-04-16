@@ -31,7 +31,6 @@ export default {
 };
 </script>
 
-
 <style lang="stylus">
   .hello-world
     color: red

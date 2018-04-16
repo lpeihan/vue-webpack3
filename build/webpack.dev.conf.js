@@ -16,7 +16,7 @@ module.exports = merge(baseWebpackConf, {
     port: port,
     proxy: {
       '/api/v1': {
-        target: 'http://localhost:8300',
+        target: 'http://localhost:8300'
       }
     },
     open: true,

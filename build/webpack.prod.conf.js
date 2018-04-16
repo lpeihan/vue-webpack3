@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const path = require('path');
 const merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const baseWebpackConf = require('./webpack.base.conf');
 const { assetsPath } = require('./utils');
@@ -50,6 +50,6 @@ module.exports = merge(baseWebpackConf, {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'manifest',
       minChunks: Infinity
-    }),
+    })
   ]
 });

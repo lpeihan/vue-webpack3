@@ -23,7 +23,7 @@ module.exports = {
   rules: {
     'semi': ['error', 'always'],
     'space-before-function-paren': 'off',
-    'no-multiple-empty-lines': 'off',
+    'eol-last': 'off',
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development
