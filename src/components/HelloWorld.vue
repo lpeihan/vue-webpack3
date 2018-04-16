@@ -17,6 +17,9 @@
     computed: {
       ...mapState(['msg']),
       ...mapGetters([])
+    },
+    mounted() {
+      // this.$http.get('api/v1/hello');
     }
   };
 </script>

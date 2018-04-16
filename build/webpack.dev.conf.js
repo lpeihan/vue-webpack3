@@ -14,12 +14,12 @@ const port = 8301;
 module.exports = merge(baseWebpackConf, {
   devServer: {
     port: port,
-    open: true,
     proxy: {
       '/api/v1': {
         target: 'http://localhost:8300',
       }
     },
+    open: true,
     compress: true,
     hot: true,
     inline: true,
