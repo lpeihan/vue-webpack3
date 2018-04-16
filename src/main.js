@@ -1,11 +1,12 @@
 import Vue from 'vue';
-import axios from 'axios';
-import App from './App';
+import App from './app';
 import router from './router';
 
 import './utils/filters';
+import './utils/axios';
 
-Vue.prototype.$http = axios;
+
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 
