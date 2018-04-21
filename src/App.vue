@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -8,4 +10,13 @@
   @import "./styles/mixins"
 
   global-reset()
+
+  #app
+    .fade
+      &-enter
+      &-leave-to
+        opacity: 0
+      &-enter-active
+      &-leave-active
+        transition: opacity .3s
 </style>

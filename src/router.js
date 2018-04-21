@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from './components/hello-world';
-import Todo from './pages/todo';
+import ScrollPicker from './pages/scroll-picker';
+import Home from './pages/home';
 
 Vue.use(Router);
 
@@ -9,13 +9,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Home',
+      component: Home
     },
     {
-      path: '/todo',
-      name: 'Todo',
-      component: Todo
+      path: '/scroll-picker',
+      name: 'ScrollPicker',
+      component: ScrollPicker
     }
   ]
 });

@@ -1,6 +1,6 @@
 <template>
-  <div class="hello-world">
-    {{msg}}
+  <div class="hello">
+    <div class="item"></div>
   </div>
 </template>
 
@@ -32,7 +32,14 @@ export default {
 </script>
 
 <style lang="stylus">
-  .hello-world
-    color: red
-    transform: translate(0, 0)
+  .hello
+    width: 300px
+    height: 300px
+    display: flex
+    background: lightblue
+    .item
+      width: 100px
+      height: 100px
+      background: green
+      margin: auto
 </style>
